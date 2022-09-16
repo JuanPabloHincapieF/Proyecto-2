@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/8e99f647d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <!-- nav principal  -->
+        <nav class="navbar navbar-expand-lg bg-white custom-navbar sticky-top">
+            <div class="container-fluid ps-4 position-relative">
+                <a class="navbar-brand" href="Proyecto2.html">X University</a>
+                <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-relative end-0" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Proyecto2.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#friends">Amigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="perfil-principal">
+                    <img src="https://avatars.githubusercontent.com/u/98063533?v=4" alt="profile picture">
+                </div>
+            </div>
+        </nav>
+        <!-- container principal (la parte punteada)  -->
+        <div class="container detalles my-5">
+            <div class="row">
+                <!-- amigos y detalles -->
+                <div class="col-sm-12 col-md-12 col-lg-5 p-5 justify-content-center">
+                    <div class="note note-1 text-center custom-shadow">
+                        <ul class="note-1__ul">
+                            <li class="note-1__li my-2 position-relative">Details</li>
+                            <li class="note-1__li my-2 position-relative">University</li>
+                            <li class="note-1__li my-2 position-relative">Location</li>
+                        </ul>
+                        <!-- <p>
+                            Details <br>
+                            University <br>
+                            Location
+                        </p> -->
+                    </div>
+                    <div class="note note-2 custom-shadow">
+                        <div class="h2 text-center" id="friends">Amigos</div>
+                        <div class="friends-grid mt-3">
+                            <img src="https://www.shareicon.net/data/128x128/2015/09/18/103162_user_512x512.png" alt=""
+                                class="w-100 rounded-circle">
+                            <img src="https://www.shareicon.net/data/512x512/2015/09/18/103161_man_512x512.png" alt=""
+                                class="w-100 rounded-circle">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqXUW5D_12ZTOOxgpz7vowsHbfQzyyyri2m2KQiCg1jg&s"
+                                alt="" class="w-100 rounded-circle">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGQ8dQ-LMiMmTEyBijR0FzpQHC7tH6qTE2g&usqp=CAU"
+                                alt="" class="w-100 rounded-circle">
+                            <img src="https://www.shareicon.net/download/2016/08/18/813790_people_512x512.png" alt=""
+                                class="w-100 rounded-circle">
+                            <img src="https://www.shareicon.net/data/128x128/2015/09/24/106433_user_512x512.png" alt=""
+                                class="w-100 rounded-circle">
+                        </div>
+                    </div>
+                </div>
+                <!-- publicación  -->
+                <div class="col-sm-12 col-md-12 col-lg-7  my-5 d-flex justify-content-center ">
+                    <!-- foto y nombre del perfil -->
+                    <div class="w-75 bg-white custom-shadow">
+                        <div class="perfil">
+                            <img src="https://avatars.githubusercontent.com/u/98063533?v=4" alt="profile picture">
+                            <p>Juan Pablo Hincapié Forero</p>
+                        </div>
+                        <!-- imagen de la publicación  -->
+                        <img src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg?w=2000"
+                            alt="img" class="w-100">
+                        <!-- interacciones -->
+                        <div class="interacciones d-flex justify-content-evenly my-5 ">
+                            <i class="fa-regular fa-thumbs-up" id='like'></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-reply"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('#like').click(function test() {
+            $('#like').toggleClass('fa-solid')
+        });
+    </script>
+
+    <!-- <script>
+        function changeIcon1() {
+            let x = document.getElementById('Icon1')
+            if (x.classList.contains('fa-regular')) {
+                x.classList.remove('fa-regular')
+                x.classList.add('fa-solid')
+            } else {
+                x.classList.remove('fa-solid')
+                x.classList.add('fa-regular')
+            }
+        }
+    </script> -->
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
