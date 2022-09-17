@@ -112,6 +112,6 @@ body {
 #like {
   transition: transform 0.2s;
 }
-#like:hover {
+#like:active {
   transform: translateY(-10px) rotate(-10deg);
 }
